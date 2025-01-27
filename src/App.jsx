@@ -6,8 +6,6 @@ import { useStore } from './store/store';
 
 function App() {
 
-  // const [state, dispatch] = useReducer(reducerCart, productsInitialState);
-
   const {
     products,
     cart,
@@ -22,31 +20,6 @@ function App() {
     console.log('cart')
     calculateTotalPriceOfCart()
   }, [cart, calculateTotalPriceOfCart])
-
-  // const addToCart = (id) => {
-  //   dispatch({
-  //     type: TYPES.ADD_TO_CART,
-  //     payload: id
-  //   })
-  // }
-
-  // const deleteFromCart = (id) => {
-  //   dispatch({
-  //     type: TYPES.DELETE_PRODUCT_FROM_CART,
-  //     payload: id
-  //   })
-  // }
-
-  // const clearCart = () => {
-  //   dispatch({
-  //     type: TYPES.DELETE_ALL_FROM_CART
-  //   })
-  // }
-
-  // const calculateTotalPriceOfCart = () => {
-  //   dispatch({ type: TYPES.CALCULATE_TOTAL_PRICE_OF_THE_CART })
-  // }
-
 
   return (
     <>
